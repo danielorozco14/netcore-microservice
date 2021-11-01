@@ -76,7 +76,6 @@ C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\Journ
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreB.csproj.AssemblyReference.cache
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreB.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreB.AssemblyInfoInputs.cache
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreB.AssemblyInfo.cs
@@ -90,3 +89,5 @@ C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\Journ
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreB.dll
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreB.pdb
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreB.genruntimeconfig.cache
+C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreB.csproj.CopyComplete
+C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreB\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreB.csproj.AssemblyReference.cache
