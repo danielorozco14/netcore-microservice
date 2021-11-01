@@ -1,4 +1,5 @@
 ﻿using JourneyHero.Api.StoreC.Aplicacion.Consultas;
+using JourneyHero.Api.StoreC.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +21,7 @@ namespace JourneyHero.Api.StoreC.Controllers
             mediator = _mediator;
         }
 
-        /*[HttpGet]
+        [HttpGet]
         public async Task<ActionResult<List<Inventario>>> AllMarcas()
         {
             var listCarros = await mediator.Send(new ConsultaCarro.GetCarros());
@@ -29,20 +30,21 @@ namespace JourneyHero.Api.StoreC.Controllers
 
             var list = from carro in listCarros
                        join repuesto in listRepuestos on carro.CarroId equals repuesto.CarroId
-                       join modelo in listModelos on carro.ModeloId equals modelo.ModeloId
-                       join marcas in listMarcas on modelo.MarcaId equals marcas.MarcaId
+                       join marcas in listMarcas on carro.MarcaId equals marcas.MarcaId
                        select new Inventario
                        {
                            nombreMarca = marcas.nombreMarca,
-                           nombreModelo = modelo.nombreModelo,
+                           nombreModelo = carro.nombreModelo,
                            anio = carro.anio,
                            nombreRepuesto = repuesto.nombreRepuesto,
+                           marcaRepuesto=repuesto.marcaRepuesto,
+                           RepuestoGuid= repuesto.RepuestoGuid,
                            precio = repuesto.precio
                        };
 
             List<Inventario> inventarios = list.ToList();
 
             return inventarios;
-        }*/
+        }
     }
 }
