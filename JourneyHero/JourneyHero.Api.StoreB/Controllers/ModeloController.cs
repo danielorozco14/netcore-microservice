@@ -1,4 +1,6 @@
 ﻿using JourneyHero.Api.StoreB.Aplicacion;
+using JourneyHero.Api.StoreB.Aplicacion.Consultas;
+using JourneyHero.Api.StoreB.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -24,6 +26,14 @@ namespace JourneyHero.Api.StoreB.Controllers
         public async Task<ActionResult<Unit>> AddMarca(NuevoModelo.Executer data)
         {
             return await mediator.Send(data);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<Modelo>>> AllModelos()
+        {
+            var list = await mediator.Send(new ConsultaModelo.GetModelos());
+
+            return list;
         }
     }
 }

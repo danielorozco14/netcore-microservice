@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c6GA+8cGTO6c37Cp9A+g0UnHK64uQl4oFK+NGhAsIMOs16H3t4unGKvlZPttIWpNH8uNuAtSNK1SvHtPBF607A==",
+  "dgSpecHash": "riSPxPDTlrupxhNwgq3hOxSGrhtfOe2xTKT4EddVP7MbhrdN1925w/6TW2KRkbMCpz16yRfYsI+fsD+ixUnQPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie\\Documents\\PROGRAMMING\\.NET\\JourneyHero\\JourneyHero.Api.StoreA\\JourneyHero.Api.StoreA.csproj",
+  "projectFilePath": "C:\\Users\\danie\\Documents\\PROGRAMMING\\.NET\\netcore-microservice\\JourneyHero\\JourneyHero.Api.StoreA\\JourneyHero.Api.StoreA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\fluentvalidation\\10.3.4\\fluentvalidation.10.3.4.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.4\\fluentvalidation.aspnetcore.10.3.4.nupkg.sha512",

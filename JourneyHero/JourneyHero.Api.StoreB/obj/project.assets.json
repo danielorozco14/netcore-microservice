@@ -977,11 +977,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danie\\Documents\\PROGRAMMING\\.NET\\JourneyHero\\JourneyHero.Api.StoreB\\JourneyHero.Api.StoreB.csproj",
+      "projectUniqueName": "C:\\Users\\danie\\Documents\\PROGRAMMING\\.NET\\netcore-microservice\\JourneyHero\\JourneyHero.Api.StoreB\\JourneyHero.Api.StoreB.csproj",
       "projectName": "JourneyHero.Api.StoreB",
-      "projectPath": "C:\\Users\\danie\\Documents\\PROGRAMMING\\.NET\\JourneyHero\\JourneyHero.Api.StoreB\\JourneyHero.Api.StoreB.csproj",
+      "projectPath": "C:\\Users\\danie\\Documents\\PROGRAMMING\\.NET\\netcore-microservice\\JourneyHero\\JourneyHero.Api.StoreB\\JourneyHero.Api.StoreB.csproj",
       "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danie\\Documents\\PROGRAMMING\\.NET\\JourneyHero\\JourneyHero.Api.StoreB\\obj\\",
+      "outputPath": "C:\\Users\\danie\\Documents\\PROGRAMMING\\.NET\\netcore-microservice\\JourneyHero\\JourneyHero.Api.StoreB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
