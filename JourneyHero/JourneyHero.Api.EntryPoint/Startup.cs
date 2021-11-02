@@ -1,6 +1,6 @@
 using FluentValidation.AspNetCore;
-using JourneyHero.Api.StoreC.Aplicacion;
-using JourneyHero.Api.StoreC.Persistence;
+using JourneyHero.Api.EntryPoint.Aplicacion;
+using JourneyHero.Api.EntryPoint.Persistence;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JourneyHero.Api.StoreC
+namespace JourneyHero.Api.EntryPoint
 {
     public class Startup
     {
@@ -30,24 +30,21 @@ namespace JourneyHero.Api.StoreC
         public void ConfigureServices(IServiceCollection services)
         {
             //Adding fluent validation
-            services.AddControllers().AddFluentValidation(cnfg => cnfg.RegisterValidatorsFromAssemblyContaining<NuevoMarca>());
-            services.AddControllers().AddFluentValidation(cnfg => cnfg.RegisterValidatorsFromAssemblyContaining<NuevoCarro>());
-            services.AddControllers().AddFluentValidation(cnfg => cnfg.RegisterValidatorsFromAssemblyContaining<NuevoRepuesto>());
+            services.AddControllers().AddFluentValidation(cnfg => cnfg.RegisterValidatorsFromAssemblyContaining<NuevoTienda>());
 
             services.AddControllers();
+
 
             //Setting Connection to MySql
             string dbConnection = Configuration.GetConnectionString("ConexionDB");
 
-            services.AddDbContext<ContextStoreC>(options =>
+            services.AddDbContext<ContextEP>(options =>
             {
                 options.UseMySql(dbConnection, ServerVersion.AutoDetect(dbConnection));
             });
 
             //Adding MediaTR as Service
-            services.AddMediatR(typeof(NuevoMarca.Handler).Assembly);
-            services.AddMediatR(typeof(NuevoCarro.Handler).Assembly);
-            services.AddMediatR(typeof(NuevoRepuesto.Handler).Assembly);
+            services.AddMediatR(typeof(NuevoTienda.Handler).Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
