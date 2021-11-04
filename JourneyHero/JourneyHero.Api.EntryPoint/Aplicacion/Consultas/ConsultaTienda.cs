@@ -29,9 +29,9 @@ namespace JourneyHero.Api.EntryPoint.Aplicacion.Consultas
 
             public async Task<List<Tienda>> Handle(GetTiendas request, CancellationToken cancellationToken)
             {
-                var listTiendas = await context.Tiendas.ToListAsync();
-
-                return listTiendas;
+                //AQUI VAS A METER LAS LISTAS NUEVAS DE LOS ENDPOINT Y ACA VAS A METER LAS LISTAS POR CADA TIENDA CORRESPONDIENTE.
+                var listCarros = await context.Tiendas.ToListAsync();
+                return listCarros;
             }
         }
     }

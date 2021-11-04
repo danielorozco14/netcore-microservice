@@ -1,6 +1,9 @@
 using FluentValidation.AspNetCore;
 using JourneyHero.Api.EntryPoint.Aplicacion;
+using JourneyHero.Api.EntryPoint.Aplicacion.Consultas;
 using JourneyHero.Api.EntryPoint.Persistence;
+using JourneyHero.Api.EntryPoint.RemoteInterface;
+using JourneyHero.Api.EntryPoint.RemoteService;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,6 +32,9 @@ namespace JourneyHero.Api.EntryPoint
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Adding Scope
+            services.AddScoped<IProductosService, ProductoService>();
+
             //Adding fluent validation
             services.AddControllers().AddFluentValidation(cnfg => cnfg.RegisterValidatorsFromAssemblyContaining<NuevoTienda>());
 
@@ -45,6 +51,24 @@ namespace JourneyHero.Api.EntryPoint
 
             //Adding MediaTR as Service
             services.AddMediatR(typeof(NuevoTienda.Handler).Assembly);
+            services.AddMediatR(typeof(ConsultaInventario.Handler).Assembly);
+
+
+            //Addig HTTP endpoints 
+            services.AddHttpClient("TiendaA", config =>
+            {
+                config.BaseAddress = new Uri(Configuration["Services: StoreA"]);
+            });
+
+            services.AddHttpClient("TiendaB", config =>
+            {
+                config.BaseAddress = new Uri(Configuration["Services: StoreB"]);
+            });
+
+            services.AddHttpClient("TiendaC", config =>
+            {
+                config.BaseAddress = new Uri(Configuration["Services: StoreC"]);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

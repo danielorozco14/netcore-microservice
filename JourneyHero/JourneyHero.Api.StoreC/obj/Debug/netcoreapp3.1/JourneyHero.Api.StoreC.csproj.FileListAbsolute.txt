@@ -44,4 +44,3 @@ C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\Journ
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreC\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreC.dll
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreC\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreC.pdb
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreC\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreC.genruntimeconfig.cache
-C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreC\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreC.csproj.CopyComplete

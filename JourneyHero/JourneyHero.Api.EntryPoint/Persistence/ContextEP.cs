@@ -1,4 +1,5 @@
 ﻿using JourneyHero.Api.EntryPoint.Models;
+
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,10 @@ namespace JourneyHero.Api.EntryPoint.Persistence
         public ContextEP(DbContextOptions<ContextEP> opts) : base(opts) { }
 
         public DbSet<Tienda> Tiendas { get; set; }
-        
+       /* public DbSet<TiendaA> TiendasA { get; set; }
+        public DbSet<TiendaB> TiendasB { get; set; }
+        public DbSet<TiendaC> TiendasC { get; set; }*/
+
+
     }
 }

@@ -90,4 +90,3 @@ C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\Journ
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreA\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreA.dll
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreA\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreA.pdb
 C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreA\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreA.genruntimeconfig.cache
-C:\Users\danie\Documents\PROGRAMMING\.NET\netcore-microservice\JourneyHero\JourneyHero.Api.StoreA\obj\Debug\netcoreapp3.1\JourneyHero.Api.StoreA.csproj.CopyComplete

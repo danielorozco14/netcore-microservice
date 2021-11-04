@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JourneyHero.Api.EntryPoint.Aplicacion.Consultas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace JourneyHero.Api.EntryPoint.Models
         public string telefono { get; set; }
         public double rating { get; set; }
 
+        public List<ProductosDto> Productos;
         //Guid
         public string StoreGuid { get; set; }
     }

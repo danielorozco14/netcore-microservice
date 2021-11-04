@@ -23,17 +23,21 @@ namespace JourneyHero.Api.EntryPoint.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Unit>> AddMarca(NuevoTienda.Executer data)
+        public async Task<ActionResult<Unit>> AddTienda(NuevoTienda.Executer data)
         {
             return await mediator.Send(data);
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Tienda>>> AllCarros()
+        public async Task<ActionResult<List<Tienda>>> AllTienda()
         {
             var list = await mediator.Send(new ConsultaTienda.GetTiendas());
+            var products = await mediator.Send(new ConsultaInventario.Executer());
+            var resultSet = list.OrderByDescending(a => a.rating);
 
-            return list;
+            resultSet.ElementAt(2).Productos = products;
+
+            return resultSet.ToList();
         }
     }
 }
